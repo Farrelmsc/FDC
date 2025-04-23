@@ -86,6 +86,24 @@ section {
     color: var(--accent-color);
 }
 
+.btn2 {
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: var(--transition);
+    border: 2px solid var(--accent-color);
+    text-align: center;
+}
+
+.btn2:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+
 /* Theme Toggle */
 .theme-toggle {
     position: fixed;
