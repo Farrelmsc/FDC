@@ -246,6 +246,56 @@
         </div>
     </section>
 
+  <style>
+    /* Tombol Chatbot */
+    #chatbot-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 14px 18px;
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 1000;
+    }
+
+    /* Iframe Chatbot */
+    #chatbot-frame {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 350px;
+      height: 500px;
+      border: none;
+      display: none;
+      z-index: 1000;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol Chatbot -->
+  <button id="chatbot-btn">💬 Chat Asisten</button>
+
+  <!-- Iframe Chatbot (Ganti link Landbot di sini) -->
+  <iframe id="chatbot-frame" src="https://landbot.io/u/YOUR_BOT_URL_HERE"></iframe>
+
+  <script>
+    const chatbotBtn = document.getElementById("chatbot-btn");
+    const chatbotFrame = document.getElementById("chatbot-frame");
+
+    chatbotBtn.addEventListener("click", () => {
+      chatbotFrame.style.display = chatbotFrame.style.display === "none" ? "block" : "none";
+    });
+  </script>
+
+
     <!-- Footer -->
     <footer>
         <div class="container">
